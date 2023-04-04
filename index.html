@@ -6,8 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://unpkg.com/sweetalert/dist/sweetalert.css" />
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Interactive rating component</title>
+  <script src="./script.js" defer></script>  
 </head>
 <body>  
 
@@ -25,21 +27,22 @@
       <li><button class="btn">5</button></li>
     </ul>
 
-    <button class="btn-submit" id="submit-rating">Submit</button>
+    <button class="btn-submit" id="submit">Submit</button>
 
   </div>
 
 
-  <div class="container thankyou ">
+  <div class="container thankyou hide">
     <img src="./images/illustration-thank-you.svg" alt="">
-    <p class="notification">You selected <span class="number">X</span> out of 5</p>
+    <p class="notification">You selected <span class="numberRating">X</span> out of 5</p>
     <h2>Thank you!</h2>
     <p>We appreciate you taking the time to give a rating. If you ever need more support,
       don’t hesitate to get in touch!</p>
       
-    <button class="btn-submit" id="submit-rating">Return</button>
+    <button class="btn-submit" id="return">Return</button>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
