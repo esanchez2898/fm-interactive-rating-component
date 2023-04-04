@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --lightGrey: hsl(217, 12%, 63%);
+    --mediumGrey: hsl(216, 12%, 54%);
+    --darkBlue: hsl(213, 19%, 18%);
+    --veryDarkBlue: hsl(216, 12%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.5rem;   
+    background: var(--veryDarkBlue); 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 400px;
+    min-height: 380px;
+    max-height: 100%;    
+    border-radius: 25px;
+    padding: 35px;
+    background-color: var(--darkBlue);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+h1,
+h2 {
+    color:var(--white);
+}
+
+p {
+    line-height: 1.4;
+    color: var(--mediumGrey);
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul,
+li,
+button {
+  font-family: inherit;
+  font-size: 1.6rem;
+  color: white;
+}
+
+button {
+    user-select: none;
+    cursor: pointer;
+}
+
+.container.main img {
+    background-color: var(--veryDarkBlue); 
+    padding: .9rem;    
+    border-radius: 50%;
+}
+.btn {
+    background: var(--veryDarkBlue);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    color: white;  
+}
+
+.btn:focus {
+    background: var(--lightGrey);
+}
+
+.btn:hover {
+    background: var(--orange);
+  }
+
+.btn-submit {
+    width: 100%;
+    height: 35px;
+    text-align: center;
+    background: var(--orange);
+    border: none;
+    border-radius: 40px;
+}
+
+.btn-submit:hover {
+    background: var(--white);
+    color: var(--orange);
+}
+
+ul {    
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+.container.thankyou {
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
