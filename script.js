@@ -8,8 +8,9 @@ const returnBtn = document.querySelector("#return")
 ratings.forEach((rating) => {
     rating.addEventListener("click", () => {
         currentRating.innerHTML = rating.innerHTML
-    })
+    })    
 })
+
 
 submitBtn.addEventListener("click", () => {
     if (currentRating.innerHTML != "X") {
